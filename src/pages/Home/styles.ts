@@ -1,21 +1,23 @@
 import styled from 'styled-components';
 
+import background from '../../assets/img/bg.jpg';
+
 export const Background = styled.div`
   position: absolute;
   top: 0px;
   left: 0px;
   height: 100%;
   width: 100%;
-  background-image: url('https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85');
+  background-image: url(${background});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -999;
-  filter: brightness(60%) contrast(150%);
+  filter: brightness(60%);
 `;
 
 export const HeaderContainer = styled.div`
-  height: 100vh;
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +74,6 @@ export const ServicesContainer = styled.div`
     width: 100%;
     max-width: 1420px;
     margin-bottom: 30px;
-    /* border: 1px solid green; */
 
     div {
       display: flex;
@@ -81,7 +82,6 @@ export const ServicesContainer = styled.div`
       height: 300px;
       width: 400px;
       margin: 14px;
-      /* border: 1px solid black; */
       border-radius: 5px;
       transition: all 0.2s;
     }
@@ -109,14 +109,12 @@ export const ServicesContainer = styled.div`
 
 `;
 
-// export const ServicesWrapper = styled.div`
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     flex-grow: 1;
-//     flex-wrap: wrap;
-//     width: 100%;
-//     max-width: 1420px;
-//     border: 1px solid black;
-// `;
+export const GalleryContainer = styled.div`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+`;
+
 

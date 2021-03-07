@@ -1,6 +1,11 @@
 import React from 'react';
-
-import { HeaderContainer, Background, ServicesContainer } from './styles';
+import Carousel from '../../components/Carousel';
+import {
+  HeaderContainer,
+  Background,
+  ServicesContainer,
+  GalleryContainer,
+} from './styles';
 
 import imgFood from '../../assets/img/food.svg';
 import imgTravel from '../../assets/img/tourism.svg';
@@ -14,7 +19,7 @@ const Home: React.FC = () => {
     <>
       <Background />
       <HeaderContainer>
-        <h1>Travel e Tours</h1>
+        <h1>Travel &amp; Tours</h1>
         <h3>
           Lorem ipsum is placeholder text commonly used in 
           the graphic, print, and publishing industries.
@@ -83,6 +88,10 @@ const Home: React.FC = () => {
           </div>
         </div>
       </ServicesContainer>
+
+      <GalleryContainer>
+        <Carousel />
+      </GalleryContainer>
 
     </>
   );

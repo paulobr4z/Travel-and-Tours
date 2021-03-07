@@ -5,17 +5,13 @@ interface MenuProps {
 }
 
 export const Header = styled.div`
-  position: absolute;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   height: 100px;
-  width: 100%;
   max-width: 1420px;
-  left: 50%;
-  transform: translate(-50%);
   color: #fff;
-  padding: 14px;
+  margin: 0 auto;
 
   @media (max-width: 1024px) {
     height: 80px;
@@ -25,13 +21,13 @@ export const Header = styled.div`
 
 export const Checkbox = styled.div<MenuProps>`
   cursor: pointer;
-  z-index: 9999;
+  z-index: 999;
 
   div {
     height: 2px;
-    width: 40px;
+    width: 36px;
     background-color: ${({click}) => click ? '#000' : '#fff'};
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     border-radius: 10px;
     transform-origin: 1px;
     transition: 0.5s ease-in-out;
@@ -65,7 +61,6 @@ export const MenuContainer = styled.div<MenuProps>`
   opacity: ${({click}) => click ? '1' : '0'};
   visibility: ${({click}) => click ? 'visible' : 'hidden'};
   transition: all 1s;
-  z-index: 999;
 
   li {
     list-style-type: none;
@@ -77,6 +72,10 @@ export const MenuContainer = styled.div<MenuProps>`
   a {
     text-decoration: none;
     color: #000;
+  }
+
+  a:hover {
+    text-decoration: underline;      
   }
 
 `;
