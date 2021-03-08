@@ -1,11 +1,5 @@
 import React from 'react';
-import Carousel from '../../components/Carousel';
-import {
-  HeaderContainer,
-  Background,
-  ServicesContainer,
-  GalleryContainer,
-} from './styles';
+import Gallery from '../../components/Gallery';
 
 import imgFood from '../../assets/img/food.svg';
 import imgTravel from '../../assets/img/tourism.svg';
@@ -13,6 +7,13 @@ import imgAirplane from '../../assets/img/plane.svg';
 import imgBeach from '../../assets/img/beach.svg';
 import imgMountain from '../../assets/img/mountain.svg';
 import imgBallon from '../../assets/img/balloon.svg';
+
+import {
+  HeaderContainer,
+  Background,
+  ServicesContainer,
+  GalleryContainer,
+} from './styles';
 
 const Home: React.FC = () => {
   return (
@@ -90,7 +91,8 @@ const Home: React.FC = () => {
       </ServicesContainer>
 
       <GalleryContainer>
-        <Carousel />
+        <h1>Gallery</h1>
+        <Gallery />
       </GalleryContainer>
 
     </>

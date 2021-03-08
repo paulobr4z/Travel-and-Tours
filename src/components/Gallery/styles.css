@@ -1,0 +1,25 @@
+.swiper-container {
+  height: 75vh;
+  width: 100%;
+  max-width: 1420px;  
+}
+
+.swiper-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.swiper-pagination {
+  bottom: 0;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.swiper-wrapper {
+  padding-inline-start: 0;
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet { color: white; }
+

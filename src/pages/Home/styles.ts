@@ -112,9 +112,14 @@ export const ServicesContainer = styled.div`
 export const GalleryContainer = styled.div`
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: brown;
+
+  h1 {
+    margin-bottom: 50px;
+  }
 `;
 
 
