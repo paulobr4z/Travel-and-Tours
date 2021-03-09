@@ -12,6 +12,7 @@ export const Header = styled.div`
   max-width: 1420px;
   color: #fff;
   margin: 0 auto;
+  padding: 0px 14px;
 
   @media (max-width: 1024px) {
     height: 80px;
@@ -27,9 +28,9 @@ export const Checkbox = styled.div<MenuProps>`
     height: 2px;
     width: 36px;
     background-color: ${({click}) => click ? '#000' : '#fff'};
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     border-radius: 10px;
-    transform-origin: 1px;
+    transform-origin: 4px;
     transition: 0.5s ease-in-out;
 
     &:nth-child(1) {
@@ -37,7 +38,7 @@ export const Checkbox = styled.div<MenuProps>`
     }
 
     &:nth-child(2) {
-      transform: ${({click}) => click ? 'translateX(100%)' : 'translateX(0)'};
+      transform: ${({click}) => click ? 'translateX(-100%)' : 'translateX(0)'};
       opacity: ${({click}) => click ? 0 : 1};
     }
 
