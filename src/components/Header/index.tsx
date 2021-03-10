@@ -17,6 +17,9 @@ function Menu () {
             <Link to="/about" onClick={() => setClick(false)}>About</Link>
           </li>
           <li>
+            <Link to="/blog" onClick={() => setClick(false)}>Blog</Link>
+          </li>
+          <li>
             <Link to="/contact" onClick={() => setClick(false)}>Contact</Link>
           </li>
         </ul>
