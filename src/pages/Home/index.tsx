@@ -11,7 +11,6 @@ import imgBallon from '../../assets/img/balloon.svg';
 
 import {
   HeaderContainer,
-  Background,
   ServicesContainer,
   GalleryContainer,
 } from './styles';
@@ -19,7 +18,6 @@ import {
 const Home: React.FC = () => {
   return (
     <>
-      <Background />
       <HeaderContainer>
         <h1>Travel &amp; Tours</h1>
         <h3>

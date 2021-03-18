@@ -4,7 +4,6 @@ import Footer from '../../components/Footer';
 import imgPost from '../../assets/img/post.jpg';
 
 import {
-  Background,
   HeaderContainer,
   BlogContainer,
   BlogWrapper,
@@ -18,7 +17,6 @@ import {
 const Blog: React.FC = () => {
   return (
     <>
-      <Background />
       <HeaderContainer>
         <h1>Blog</h1>
         <h3>

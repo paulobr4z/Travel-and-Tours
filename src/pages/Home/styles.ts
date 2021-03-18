@@ -2,20 +2,6 @@ import styled from 'styled-components';
 
 import background from '../../assets/img/bg.jpg';
 
-export const Background = styled.div`
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: calc(100% + 100px);
-  width: 100%;
-  background-image: url(${background});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -999;
-  filter: brightness(60%);
-`;
-
 export const HeaderContainer = styled.div`
   height: 100vh;
   display: flex;
@@ -24,6 +10,20 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   color: white;
   padding: 0px 14px;
+  z-index: -999;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(${background});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%; 
+    z-index: -1;
+    filter: brightness(60%);
+  }
 
   h1 {
     font-size: 80px;

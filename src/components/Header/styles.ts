@@ -5,14 +5,18 @@ interface MenuProps {
 }
 
 export const Header = styled.div`
+  position: absolute;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   height: 100px;
+  width: 100%;
   max-width: 1420px;
+  left: 50%;
+  transform: translateX(-50%);
   color: #fff;
-  margin: 0 auto;
   padding: 0px 14px;
+  z-index: 999;
 
   @media (max-width: 1024px) {
     height: 80px;
@@ -22,7 +26,6 @@ export const Header = styled.div`
 
 export const Checkbox = styled.div<MenuProps>`
   cursor: pointer;
-  z-index: 999;
 
   div {
     height: 2px;
@@ -62,6 +65,7 @@ export const MenuContainer = styled.div<MenuProps>`
   opacity: ${({click}) => click ? '1' : '0'};
   visibility: ${({click}) => click ? 'visible' : 'hidden'};
   transition: all 1s;
+  z-index: 999;
 
   li {
     list-style-type: none;

@@ -2,20 +2,6 @@ import styled from 'styled-components';
 
 import background from '../../assets/img/bg.jpg';
 
-export const Background = styled.div`
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: calc(70% + 100px);
-  width: 100%;
-  background-image: url(${background});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -999;
-  filter: brightness(60%);
-`;
-
 export const HeaderContainer = styled.div`
   height: 70vh;
   display: flex;
@@ -24,6 +10,19 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   color: white;
   padding: 0px 14px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(${background});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+    width: 100%; 
+    z-index: -1;
+    filter: brightness(60%);
+  }
 
   h1 {
     font-size: 80px;
@@ -53,21 +52,28 @@ export const BlogContainer = styled.div`
   padding: 50px 0px;
 `;
 
-export const BlogMain = styled.div`
+export const BlogWrapper = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 880px;
-  border: 1px solid black;
+  max-width: 1420px;  
+`;
+
+export const BlogMain = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 14px;
+  justify-items: center;
+  padding: 14px;
+  width: 100%;
+  max-width: 850px;
+
 `;
 
 export const PostContainer = styled.div`
-  height: 500px;
   width: 100%;
-  max-width: 400px;
-  margin: 14px;
+  max-width: 500px;
 
   .postImage {
     height: 300px;
@@ -89,23 +95,10 @@ export const PostContainer = styled.div`
   }
 `;
 
-export const BlogWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1420px;
-  border: 1px solid brown;
-  
-  @media (max-width: 1430px) {
-    width: 900px;
-  }
-`;
-
 export const BlogAside = styled.div`
   width: 100%;
   max-width: 500px;
   margin: 14px;
-  border: 1px solid brown;
 
   @media (max-width: 350px) {
     margin: 0;
@@ -160,9 +153,10 @@ export const PopularContainer = styled.div`
 export const Pagination = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   height: 100px;
   width: 100%;
+  margin-top: 25px;
 
   div {
     display: flex;
