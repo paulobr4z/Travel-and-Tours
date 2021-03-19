@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Gallery from '../../components/Gallery';
 import Footer from '../../components/Footer';
 
@@ -11,78 +11,84 @@ import imgBallon from '../../assets/img/balloon.svg';
 
 import {
   HeaderContainer,
+  HeaderWrapper,
   ServicesContainer,
   GalleryContainer,
 } from './styles';
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    document.title = 'Home | Travel & Tours';
+  });
   return (
     <>
       <HeaderContainer>
-        <h1>Travel &amp; Tours</h1>
-        <h3>
-          Lorem ipsum is placeholder text commonly used in 
-          the graphic, print, and publishing industries.
-        </h3>
-        <div>
-          <button>CONTACT</button>
-        </div>
+        <HeaderWrapper>
+          <h1>Travel &amp; Tours</h1>
+          <h2>
+            Lorem ipsum is placeholder text commonly used in
+            the graphic, print, and publishing industries.
+          </h2>
+          <div>
+            <button>CONTACT</button>
+          </div>
+        </HeaderWrapper>
       </HeaderContainer>
 
       <ServicesContainer>
         <h1>Service</h1>
         <div className='servicesWrapper'>
           <div>
-            <img src={imgFood} alt="foods"/>
+            <img src={imgFood} alt="foods" />
             <h3>Food</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor 
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div>
-            <img src={imgTravel} alt="foods"/>
+            <img src={imgTravel} alt="foods" />
             <h3>Travel</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor 
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div>
-            <img src={imgAirplane} alt="foods"/>
+            <img src={imgAirplane} alt="foods" />
             <h3>Airplane</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor 
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div>
-            <img src={imgBeach} alt="foods"/>
+            <img src={imgBeach} alt="foods" />
             <h3>Beach</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor 
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div>
-            <img src={imgMountain} alt="foods"/>
+            <img src={imgMountain} alt="foods" />
             <h3>Mountain Climbing</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor 
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div>
-            <img src={imgBallon} alt="foods"/>
+            <img src={imgBallon} alt="foods" />
             <h3>Hot Air Balloon</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor 
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua.
             </p>
           </div>

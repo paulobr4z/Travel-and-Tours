@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../../components/Footer';
 import {
   HeaderContainer,
+  HeaderWrapper,
   ContactContainer,
   ContactWrapper,
 } from './styles';
 
 const Contact: React.FC = () => {
+  useEffect(() => {
+    document.title = 'Contact | Travel & Tours';
+  });
   return (
     <>
       <HeaderContainer>
-        <h1>Contact</h1>
-        <h3>
-          Lorem ipsum is placeholder text commonly used in 
-          the graphic, print, and publishing industries.
-        </h3>
+        <HeaderWrapper>
+          <h1>Contact</h1>
+          <h2>
+            Lorem ipsum is placeholder text commonly used in 
+            the graphic, print, and publishing industries.
+          </h2>
+        </HeaderWrapper>
       </HeaderContainer>
       <ContactContainer>
         <ContactWrapper>

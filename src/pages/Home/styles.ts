@@ -12,32 +12,53 @@ export const HeaderContainer = styled.div`
   padding: 0px 14px;
   z-index: -999;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     background-image: url(${background});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    width: 100%; 
+    height: 75vh;
+    width: 70%;
+    right: 0;
+    opacity: 0.8;
     z-index: -1;
-    filter: brightness(60%);
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+`;
+
+export const HeaderWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1420px;
+  color: black;
+
+  @media (max-width: 800px) {
+    align-items: center;
   }
 
   h1 {
     font-size: 80px;
+    margin-bottom: 20px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 800px) {
       font-size: 42px;
     }
   }
 
-  h3 {
-    margin: 25px;
-    text-align: center;
+  h2 {
+    width: 100%;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 800px) {
       font-size: 16px;
     }
   }
@@ -46,19 +67,25 @@ export const HeaderContainer = styled.div`
     display: flex;
 
     button {
-      margin: 15px;
+      margin: 15px 0px;
       padding: 25px 80px;
-      color: white;
+      color: #000;
       background-color: transparent;
-      border: 2px solid #fff;
-      border-radius: 5px;
+      border: 2px solid #000;
+      border-radius: 4px;
       font-family: Montserrat;
+      font-weight: bold;
       transition: all 0.2s;
+
+      @media (max-width: 800px) {
+        padding: 15px 40px;
+        font-size: 14px;
+      }
     }
 
     button:hover {
-      background-color: white;
-      color: black;      
+      background-color: black;
+      color: white;      
     }
   }
 `;
@@ -69,10 +96,11 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #999;
 
   h1 {
-    padding: 20px 0px 100px 0px;
+    padding: 100px 0px;
+    font-size: 45px;
+    text-decoration: underline;
   }
 
   .servicesWrapper {
@@ -119,14 +147,15 @@ export const ServicesContainer = styled.div`
 `;
 
 export const GalleryContainer = styled.div`
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: brown;
+  padding-bottom: 100px;
 
   h1 {
-    margin-bottom: 50px;
+    padding: 100px 0px;
+    font-size: 45px;
+    text-decoration: underline;
   }
 `;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import background from '../../assets/img/contact.jpg';
 
 export const HeaderContainer = styled.div`
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,30 +19,71 @@ export const HeaderContainer = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70%;
-    width: 100%;
+    height: 75vh;
+    width: 70%;
+    right: 0;
+    opacity: 0.8;
     z-index: -1;
-    filter: brightness(60%);
+  }
 
+  @media (max-width: 800px) {
+    align-items: center;
   }
 
   h1 {
     font-size: 80px;
+    margin-bottom: 20px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 800px) {
       font-size: 42px;
     }
   }
 
-  h3 {
-    margin: 25px;
-    text-align: center;
+  h2 {
+    width: 100%;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 800px) {
       font-size: 16px;
     }
   }
 `;
+
+export const HeaderWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1420px;
+  color: black;
+
+  @media (max-width: 800px) {
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+
+    @media (max-width: 800px) {
+      font-size: 42px;
+    }
+  }
+
+  h2 {
+    width: 100%;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+    @media (max-width: 800px) {
+      font-size: 16px;
+    }
+  }
+`;
+
 
 export const ContactContainer = styled.div`
   display: flex;

@@ -11,6 +11,7 @@ export default createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Montserrat', sans-serif;
+    scrollbar-width: none;
   }
 
   body, input, button {

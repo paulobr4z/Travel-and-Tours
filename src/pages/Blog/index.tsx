@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../../components/Footer';
 
 import imgPost from '../../assets/img/post.jpg';
 
 import {
   HeaderContainer,
+  HeaderWrapper,
   BlogContainer,
   BlogWrapper,
   BlogMain,
@@ -15,14 +16,19 @@ import {
 } from './styles';
 
 const Blog: React.FC = () => {
+  useEffect(() => {
+    document.title = 'Blog | Travel & Tours';
+  });
   return (
     <>
       <HeaderContainer>
-        <h1>Blog</h1>
-        <h3>
-          Lorem ipsum is placeholder text commonly used in 
-          the graphic, print, and publishing industries.
-        </h3>
+        <HeaderWrapper>
+          <h1>Blog</h1>
+          <h2>
+            Lorem ipsum is placeholder text commonly used in 
+            the graphic, print, and publishing industries.
+          </h2>
+        </HeaderWrapper>
       </HeaderContainer>
       <BlogContainer>
       <BlogWrapper>
@@ -32,8 +38,8 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="postTitle">
-                <p>FEBRUARY 26, 2018</p>
-                <h2>Free Template by Colorlib</h2>
+                <p>MARCH 18, 2021</p>
+                <h2>Lorem ipsum text</h2>
               </div>
             </PostContainer>
             <PostContainer>
@@ -41,8 +47,8 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="postTitle">
-                <p>FEBRUARY 26, 2018</p>
-                <h2>Free Template by Colorlib</h2>
+                <p>MARCH 19, 2021</p>
+                <h2>Lorem ipsum text</h2>
               </div>
             </PostContainer>
             <PostContainer>
@@ -50,8 +56,8 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="postTitle">
-                <p>FEBRUARY 26, 2018</p>
-                <h2>Free Template by Colorlib</h2>
+                <p>MARCH 20, 2021</p>
+                <h2>Lorem ipsum text</h2>
               </div>
             </PostContainer>
             <PostContainer>
@@ -59,8 +65,8 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="postTitle">
-                <p>FEBRUARY 26, 2018</p>
-                <h2>Free Template by Colorlib</h2>
+                <p>MARCH 21, 2021</p>
+                <h2>Lorem ipsum text</h2>
               </div>
             </PostContainer>
             <PostContainer>
@@ -68,8 +74,8 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="postTitle">
-                <p>FEBRUARY 26, 2018</p>
-                <h2>Free Template by Colorlib</h2>
+                <p>MARCH 22, 2021</p>
+                <h2>Lorem ipsum text</h2>
               </div>
             </PostContainer>
             <PostContainer>
@@ -77,8 +83,8 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="postTitle">
-                <p>FEBRUARY 26, 2018</p>
-                <h2>Free Template by Colorlib</h2>
+                <p>MARCH 23, 2021</p>
+                <h2>Lorem ipsum text</h2>
               </div>
             </PostContainer>
 
@@ -93,7 +99,7 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="popularTitle">
-                <p>FEBRUARY 26, 2018</p>
+                <p>MARCH 26, 2021</p>
                 <h3>Free Template by Colorlib</h3>
               </div>
             </PopularContainer>
@@ -102,7 +108,7 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="popularTitle">
-                <p>FEBRUARY 26, 2018</p>
+                <p>MARCH 26, 2021</p>
                 <h3>Free Template by Colorlib</h3>
               </div>
             </PopularContainer>
@@ -111,7 +117,7 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="popularTitle">
-                <p>FEBRUARY 26, 2018</p>
+                <p>MARCH 26, 2021</p>
                 <h3>Free Template by Colorlib</h3>
               </div>
             </PopularContainer>
@@ -120,7 +126,7 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="popularTitle">
-                <p>FEBRUARY 26, 2018</p>
+                <p>MARCH 26, 2021</p>
                 <h3>Free Template by Colorlib</h3>
               </div>
             </PopularContainer>

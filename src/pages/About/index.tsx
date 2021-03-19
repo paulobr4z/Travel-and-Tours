@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../../components/Footer';
 
 import imgAbout from '../../assets/img/about-001.jpg';
@@ -11,6 +11,7 @@ import imgProfile006 from '../../assets/img/profile-006.jpg';
 
 import {  
   HeaderContainer,
+  HeaderWrapper,
   AboutContainer,
   AboutWrapper,
   TeamContainer,
@@ -21,14 +22,19 @@ import {
 
 
 const About: React.FC = () => {
+  useEffect(() => {
+    document.title = 'About | Travel & Tours';
+  });
   return (
     <>
       <HeaderContainer>
-        <h1>About</h1>
-        <h3>
-          Lorem ipsum is placeholder text commonly used in 
-          the graphic, print, and publishing industries.
-        </h3>
+        <HeaderWrapper>
+          <h1>About</h1>
+          <h2>
+            Lorem ipsum is placeholder text commonly used in 
+            the graphic, print, and publishing industries.
+          </h2>
+        </HeaderWrapper>
       </HeaderContainer>
 
       <AboutContainer>

@@ -25,8 +25,10 @@ function Menu () {
         </ul>
       </MenuContainer>
 
-      <Header>
-        <h1>TT</h1>
+      <Header click={click}>
+        
+          <h1>TT</h1>
+        
         <Checkbox click={click} onClick={() => setClick(!click)}>
           <div></div>
           <div></div>
