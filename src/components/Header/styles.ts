@@ -70,10 +70,14 @@ export const MenuContainer = styled.div<MenuProps>`
 
   li {
     list-style-type: none;
-    font-size: 32px;
-    line-height: 2.5;
-    text-align: center;
+    font-size: 42px;
+    line-height: 1.8;
+    font-weight: bold;
     text-decoration: underline;
+
+    @media (max-width: 800px) {
+      font-size: 32px;
+    }
   }
 
   a {

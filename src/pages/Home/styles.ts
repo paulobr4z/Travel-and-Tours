@@ -26,7 +26,8 @@ export const HeaderContainer = styled.div`
     z-index: -1;
 
     @media (max-width: 800px) {
-      width: 100%;
+      height: 60vh;
+      width: 70%;
     }
   }
 `;
@@ -60,6 +61,7 @@ export const HeaderWrapper = styled.div`
 
     @media (max-width: 800px) {
       font-size: 16px;
+      text-align: center;
     }
   }
 
@@ -141,7 +143,6 @@ export const ServicesContainer = styled.div`
       text-align: center;
       line-height: 30px;
     }
-
   }
 
 `;

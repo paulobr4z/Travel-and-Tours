@@ -99,8 +99,17 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="popularTitle">
-                <p>MARCH 26, 2021</p>
-                <h3>Free Template by Colorlib</h3>
+                <p>MARCH 24, 2021</p>
+                <h3>Lorem ipsum text</h3>
+              </div>
+            </PopularContainer>
+            <PopularContainer>
+              <div className="popularImage">
+                <img src={imgPost} alt="news"/>
+              </div>
+              <div className="popularTitle">
+                <p>MARCH 25, 2021</p>
+                <h3>Lorem ipsum text</h3>
               </div>
             </PopularContainer>
             <PopularContainer>
@@ -109,7 +118,7 @@ const Blog: React.FC = () => {
               </div>
               <div className="popularTitle">
                 <p>MARCH 26, 2021</p>
-                <h3>Free Template by Colorlib</h3>
+                <h3>Lorem ipsum text</h3>
               </div>
             </PopularContainer>
             <PopularContainer>
@@ -117,17 +126,8 @@ const Blog: React.FC = () => {
                 <img src={imgPost} alt="news"/>
               </div>
               <div className="popularTitle">
-                <p>MARCH 26, 2021</p>
-                <h3>Free Template by Colorlib</h3>
-              </div>
-            </PopularContainer>
-            <PopularContainer>
-              <div className="popularImage">
-                <img src={imgPost} alt="news"/>
-              </div>
-              <div className="popularTitle">
-                <p>MARCH 26, 2021</p>
-                <h3>Free Template by Colorlib</h3>
+                <p>MARCH 27, 2021</p>
+                <h3>Lorem ipsum text</h3>
               </div>
             </PopularContainer>
           </BlogAside>

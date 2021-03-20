@@ -24,29 +24,10 @@ export const HeaderContainer = styled.div`
     right: 0;
     opacity: 0.8;
     z-index: -1;
-  }
-
-  @media (max-width: 800px) {
-    align-items: center;
-  }
-
-  h1 {
-    font-size: 80px;
-    margin-bottom: 20px;
 
     @media (max-width: 800px) {
-      font-size: 42px;
-    }
-  }
-
-  h2 {
-    width: 100%;
-    max-width: 600px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-
-    @media (max-width: 800px) {
-      font-size: 16px;
+      height: 60vh;
+      width: 70%;
     }
   }
 `;
@@ -80,6 +61,7 @@ export const HeaderWrapper = styled.div`
 
     @media (max-width: 800px) {
       font-size: 16px;
+      text-align: center;
     }
   }
 `;

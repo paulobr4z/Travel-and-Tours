@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
           </form>
           <div>
             <p>ADDRESS:</p>
-            <h1>98 West 21th Street, Suite 721 New York NY 10016</h1>
+            <h1>98 West 21th Street, New York - NY</h1>
             <p>PHONE:</p>
             <h1>(+55) 98114 7978</h1>
             <p>EMAIL:</p>

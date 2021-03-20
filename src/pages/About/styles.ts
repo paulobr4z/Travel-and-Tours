@@ -24,6 +24,11 @@ export const HeaderContainer = styled.div`
     right: 0;
     opacity: 0.8;
     z-index: -1;
+
+    @media (max-width: 800px) {
+      height: 60vh;
+      width: 70%;
+    }
   }
 `;
 
@@ -56,6 +61,7 @@ export const HeaderWrapper = styled.div`
 
     @media (max-width: 800px) {
       font-size: 16px;
+      text-align: center;
     }
   }
 `;
@@ -104,6 +110,7 @@ export const AboutContainer = styled.div`
     border: 2px solid black;
     letter-spacing: 0.2rem;
     font-weight: 400;
+    background-color: transparent;
     transition: all 0.2s;
 
     @media (max-width: 1024px) {

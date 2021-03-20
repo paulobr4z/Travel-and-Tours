@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import background from '../../assets/img/bg.jpg';
+import background from '../../assets/img/blog.jpg';
 
 export const HeaderContainer = styled.div`
   height: 100vh;
@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
   z-index: -999;
 
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     background-image: url(${background});
@@ -25,6 +25,11 @@ export const HeaderContainer = styled.div`
     right: 0;
     opacity: 0.8;
     z-index: -1;
+
+    @media (max-width: 800px) {
+      height: 60vh;
+      width: 70%;
+    }
   }
 `;
 
@@ -57,6 +62,7 @@ export const HeaderWrapper = styled.div`
 
     @media (max-width: 800px) {
       font-size: 16px;
+      text-align: center;
     }
   }
 `;
@@ -94,18 +100,15 @@ export const BlogMain = styled.div`
 export const PostContainer = styled.div`
   width: 100%;
   max-width: 500px;
+  box-shadow: 0 3px 20px -5px rgb(0 0 0 / 50%);
 
   .postImage {
     height: 300px;
-    border-radius: 4px;
-
-    /* border: 2px solid black; */
 
     img {
       height: 100%;
       width: 100%;
       object-fit: cover;
-      border-radius: 4px 4px 0px 0px;
     }
   }
 
@@ -116,10 +119,8 @@ export const PostContainer = styled.div`
     height: 100px;
     background-color: white;
     padding-left: 14px;
-    border: 2px solid #cccccc;
     border-top: 0px;
     background-color: #e6eaea;
-    border-radius: 0px 0px 4px 4px;
   }
 `;
 
@@ -153,6 +154,8 @@ export const PopularContainer = styled.div`
   display: flex;
   background-color: white;
   margin-bottom: 20px;
+  box-shadow: 0 3px 20px -5px rgb(0 0 0 / 50%);
+
 
   .popularImage {
     height: 150px;
@@ -171,8 +174,8 @@ export const PopularContainer = styled.div`
     justify-content: center;
     padding: 0px 14px;
     background-color: #e6eaea;
-    border: 2px solid #cccccc;
     border-left: 0px;
+    width: 100%;
 
     p {
       font-size: 12px;

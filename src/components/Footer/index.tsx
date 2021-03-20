@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
       </div>
 
       <Copyright>
-        Copyright © 2021 All rights reserved | This template is made by <a href="paulobraz.com" target="_blank" rel="noreferrer">paulobraz.com</a>
+        Copyright © 2021 All rights reserved | <a href="paulobraz.com" target="_blank" rel="noreferrer">paulobraz.com</a>
       </Copyright>
 
       <FooterIcons>
