@@ -94,7 +94,7 @@ const About: React.FC = () => {
               <img src={imgProfile003} alt="news"/>
             </div>
             <div className="profileTitle">
-              <p>Chief Operating Officer</p>
+              <p>CHIEF OPERATING OFFICER</p>
               <h2>Gioacchino Giano</h2>
             </div>
           </Profile>
@@ -103,7 +103,7 @@ const About: React.FC = () => {
               <img src={imgProfile004} alt="news"/>
             </div>
             <div className="profileTitle">
-              <p>Chief Operating Officer</p>
+              <p>CHIEF OPERATING OFFICER</p>
               <h2>Sango Seward</h2>
             </div>
           </Profile>
@@ -112,7 +112,7 @@ const About: React.FC = () => {
               <img src={imgProfile005} alt="news"/>
             </div>
             <div className="profileTitle">
-              <p>Chief Financial Officer</p>
+              <p>CHIEF FINANCIAL OFFICER</p>
               <h2>Emma Mariele</h2>
             </div>
           </Profile>
