@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import Gallery from '../../components/Gallery';
-import Footer from '../../components/Footer';
+import { FirstSection } from '../../components/FirstSection';
+import { Gallery } from '../../components/Gallery';
+import { Footer } from '../../components/Footer';
 
 import imgFood from '../../assets/img/food.svg';
 import imgTravel from '../../assets/img/tourism.svg';
@@ -10,8 +11,6 @@ import imgMountain from '../../assets/img/mountain.svg';
 import imgBallon from '../../assets/img/balloon.svg';
 
 import {
-  HeaderContainer,
-  HeaderWrapper,
   ServicesContainer,
   GalleryContainer,
 } from './styles';
@@ -20,20 +19,13 @@ const Home: React.FC = () => {
   useEffect(() => {
     document.title = 'Home | Travel & Tours';
   });
+
   return (
     <>
-      <HeaderContainer>
-        <HeaderWrapper>
-          <h1>Travel &amp; Tours</h1>
-          <h2>
-            Lorem ipsum is placeholder text commonly used in
-            the graphic, print, and publishing industries.
-          </h2>
-          <div>
-            <button>CONTACT</button>
-          </div>
-        </HeaderWrapper>
-      </HeaderContainer>
+      <FirstSection
+        title='Head out on your next travel'
+        hasButton
+      />
 
       <ServicesContainer>
         <h1>Service</h1>

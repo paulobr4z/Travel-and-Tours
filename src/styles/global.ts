@@ -13,7 +13,7 @@ export default createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     scrollbar-width: none;
   }
-
+  
   body, input, button {
     font-size: 16px;
   }

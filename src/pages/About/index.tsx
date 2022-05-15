@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import Footer from '../../components/Footer';
+import { FirstSection } from '../../components/FirstSection';
+import { Footer } from '../../components/Footer';
 
 import imgAbout from '../../assets/img/about-001.jpg';
 import imgProfile001 from '../../assets/img/profile-001.jpg';
@@ -9,15 +10,14 @@ import imgProfile004 from '../../assets/img/profile-004.jpg';
 import imgProfile005 from '../../assets/img/profile-005.jpg';
 import imgProfile006 from '../../assets/img/profile-006.jpg';
 
-import {  
-  HeaderContainer,
-  HeaderWrapper,
+import {
   AboutContainer,
   AboutWrapper,
   TeamContainer,
   TeamWrapper,
   ProfileWrapper,
   Profile,
+  AboutTitle,
 } from './styles';
 
 
@@ -27,23 +27,20 @@ const About: React.FC = () => {
   });
   return (
     <>
-      <HeaderContainer>
-        <HeaderWrapper>
-          <h1>About</h1>
-          <h2>
-            Lorem ipsum is placeholder text commonly used in 
-            the graphic, print, and publishing industries.
-          </h2>
-        </HeaderWrapper>
-      </HeaderContainer>
+      <FirstSection
+        title='About'
+      />
 
       <AboutContainer>
+        <AboutTitle>
+          <h1>Welcome to Travel &amp; Tours</h1>
+        </AboutTitle>
         <AboutWrapper>
           <div className="imgContainer">
             <img src={imgAbout} alt=""/>
           </div>
           <div className="content">
-            <h1>Welcome Travel &amp; Tours</h1>
+            <h1>Travel &amp; Tours</h1>
             <p>Lorem ipsum, or lipsum as it is sometimes known, is
               dummy text used in laying out print, graphic or web
               designs. The passage is attributed to an unknown

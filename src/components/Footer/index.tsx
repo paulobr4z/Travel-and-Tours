@@ -10,7 +10,13 @@ import {
 
 import { FooterContainer, Copyright, FooterIcons } from './styles';
 
-const Footer: React.FC = () => {
+function getYears() {
+  const year = new Date().getFullYear();
+
+  return year;  
+}
+
+export const Footer = () => {
   return (
     <FooterContainer>
 
@@ -48,7 +54,7 @@ const Footer: React.FC = () => {
       </div>
 
       <Copyright>
-        Copyright © 2021 All rights reserved | <a href="paulobraz.com" target="_blank" rel="noreferrer">paulobraz.com</a>
+        Copyright © {getYears()} - All rights reserved | <a href="paulobraz.com" target="_blank" rel="noreferrer">paulobraz.com</a>
       </Copyright>
 
       <FooterIcons>
@@ -72,5 +78,3 @@ const Footer: React.FC = () => {
     </FooterContainer>
   );
 };
-
-export default Footer;

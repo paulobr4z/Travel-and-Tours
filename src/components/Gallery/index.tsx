@@ -6,7 +6,7 @@ import './styles.css';
 
 SwiperCore.use([Navigation, Pagination]);
 
-const Gallery: React.FC = () => {
+export const Gallery = () => {
   const slides = [];
 
   for (let i = 0; i < 5; i += 1) {
@@ -35,5 +35,3 @@ const Gallery: React.FC = () => {
     </>
   );
 };
-
-export default Gallery;

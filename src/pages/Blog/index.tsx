@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import Footer from '../../components/Footer';
+import { FirstSection } from '../../components/FirstSection';
+import { Footer } from '../../components/Footer';
 
 import imgPost from '../../assets/img/post.jpg';
 
 import {
-  HeaderContainer,
-  HeaderWrapper,
   BlogContainer,
+  BlogTitle,
   BlogWrapper,
   BlogMain,
   BlogAside,
@@ -21,16 +21,13 @@ const Blog: React.FC = () => {
   });
   return (
     <>
-      <HeaderContainer>
-        <HeaderWrapper>
-          <h1>Blog</h1>
-          <h2>
-            Lorem ipsum is placeholder text commonly used in 
-            the graphic, print, and publishing industries.
-          </h2>
-        </HeaderWrapper>
-      </HeaderContainer>
+      <FirstSection
+        title='Blog'
+      />
       <BlogContainer>
+        <BlogTitle>
+          <h1>Last posts</h1>
+        </BlogTitle>
       <BlogWrapper>
           <BlogMain>
             <PostContainer>

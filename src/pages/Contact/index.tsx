@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import Footer from '../../components/Footer';
+import { FirstSection } from '../../components/FirstSection';
+import { Footer } from '../../components/Footer';
 import {
-  HeaderContainer,
-  HeaderWrapper,
   ContactContainer,
   ContactWrapper,
+  ContactTitle,
 } from './styles';
 
 const Contact: React.FC = () => {
@@ -13,16 +13,14 @@ const Contact: React.FC = () => {
   });
   return (
     <>
-      <HeaderContainer>
-        <HeaderWrapper>
-          <h1>Contact</h1>
-          <h2>
-            Lorem ipsum is placeholder text commonly used in 
-            the graphic, print, and publishing industries.
-          </h2>
-        </HeaderWrapper>
-      </HeaderContainer>
+      <FirstSection
+        title='Contact'
+      />
+
       <ContactContainer>
+        <ContactTitle>
+          <h1>Contact Us</h1>
+        </ContactTitle>
         <ContactWrapper>
           <form>
             <label>Nome</label>

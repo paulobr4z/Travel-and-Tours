@@ -1,14 +1,23 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Header, Checkbox, MenuContainer } from './styles';
 
+import logo from '../../assets/img/logo.png';
+
 function Menu () {
   const [click, setClick] = useState(false);
+  const [scroll, setScroll] = useState(0);
+
+  const handleScroll = () => setScroll(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+  }, []);
 
   return (
     <>
-      <MenuContainer click={click}>
+      <MenuContainer click={click} scroll={scroll}>
         <ul>
           <li>
             <Link to="/" onClick={() => setClick(false)}>Home</Link>
@@ -25,15 +34,23 @@ function Menu () {
         </ul>
       </MenuContainer>
 
-      <Header click={click}>
-        
-          <h1>TT</h1>
-        
-        <Checkbox click={click} onClick={() => setClick(!click)}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </Checkbox>
+      <Header click={click}  scroll={scroll}>
+        <span>
+          <div className="logo">
+
+            <img src={logo} alt="logo" />
+
+            <h1>Travel &amp; <br /> Tours</h1>
+          </div>
+          
+          
+          <Checkbox click={click} onClick={() => setClick(!click)}  scroll={scroll}>
+            <div></div>
+            <div></div>
+            <div></div>
+          </Checkbox>
+
+        </span>
       </Header>
 
     </>

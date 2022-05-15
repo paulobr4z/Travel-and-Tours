@@ -1,26 +1,58 @@
 import styled from 'styled-components';
 
 interface MenuProps {
-  click: boolean;
+  click?: boolean;
+  scroll: number
 }
 
 export const Header = styled.div<MenuProps>`
-  position: ${({click}) => click ? 'fixed' : 'absolute'};
+  position: fixed;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  height: 100px;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
   width: 100%;
-  max-width: 1420px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: ${({click}) => click ? '#fff' : '#000'};
-  padding: 0px 14px;
+  background: #ffffff;
   transition: all 1s;
   z-index: 999;
+  box-shadow: ${({ scroll }) => scroll > 1 ? '0px 2px 4px rgba(48, 46, 69, 0.06)' : 'none'};
 
-  @media (max-width: 1024px) {
-    height: 80px;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 32px;
+
+    @media (max-width: 1024px) {
+      margin: 0 16px;
+    }
+  }
+
+  h1 {
+    font-size: 18px;
+
+    @media (max-width: 800px) {
+      font-size: 16px;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: ${({click}) => click ? 0 : 1};
+    transition: all 0.8s;
+    column-gap: 8px;
+
+    img {
+      width: 40px;
+
+      @media (max-width: 800px) {
+        width: 30px;
+      }
+    }
   }
   
 `;
@@ -29,13 +61,20 @@ export const Checkbox = styled.div<MenuProps>`
   cursor: pointer;
 
   div {
-    height: 2px;
+    height: 3px;
     width: 36px;
     background-color: #000;
-    margin-bottom: 8px;
-    border-radius: 10px;
-    transform-origin: 4px;
+    margin-bottom: 6px;
+    border-radius: 100px;
+    transform-origin: 5px;
     transition: 0.5s ease-in-out;
+
+    @media (max-width: 800px) {
+      height: 2px;
+      margin-bottom: 4px;
+      width: 28px;
+      transform-origin: 5.5px;
+    }
 
     &:nth-child(1) {
       transform: ${({click}) => click ? 'rotate(45deg)' : 'rotate(0)'};
