@@ -6,6 +6,13 @@ export const ServicesContainer = styled.div`
   align-items: center;
   justify-content: center;
 
+  h1 {
+    font-size: 45px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
   .servicesWrapper {
     display: flex;
     align-items: center;
