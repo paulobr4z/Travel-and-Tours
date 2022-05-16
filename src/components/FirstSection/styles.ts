@@ -10,19 +10,19 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   z-index: -999;
 
-  &::after {
-    content: "";
+  .backgroundHeader {
     position: absolute;
-    background-image: url(${background});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     top: 80px;
     height: 600px;
     width: 100%;
     max-width: 1420px;
-    filter: brightness(1.1);
-    z-index: -1;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
   }
 `;
 
@@ -34,6 +34,7 @@ export const HeaderWrapper = styled.div`
   max-width: 1420px;
   color: black;
   padding-left: 120px;
+  z-index: 1;
 
   @media (max-width: 1024px) {
     align-items: center;

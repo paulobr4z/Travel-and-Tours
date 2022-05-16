@@ -15,6 +15,7 @@ const Contact: React.FC = () => {
     <>
       <FirstSection
         title='Contact'
+        srcImage='https://raw.githubusercontent.com/paulobr4z/Travel-and-Tours/master/src/assets/img/contact.jpg'
       />
 
       <ContactContainer>

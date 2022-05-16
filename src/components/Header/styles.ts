@@ -15,7 +15,7 @@ export const Header = styled.div<MenuProps>`
   background: #ffffff;
   transition: all 1s;
   z-index: 999;
-  box-shadow: ${({ scroll }) => scroll > 1 ? '0px 2px 4px rgba(48, 46, 69, 0.06)' : 'none'};
+  box-shadow: ${({ click, scroll }) => scroll > 1 && !click ? '0px 2px 4px rgba(48, 46, 69, 0.06)' : 'none'};
 
   span {
     display: flex;

@@ -29,6 +29,7 @@ const About: React.FC = () => {
     <>
       <FirstSection
         title='About'
+        srcImage='https://raw.githubusercontent.com/paulobr4z/Travel-and-Tours/master/src/assets/img/about.jpg'
       />
 
       <AboutContainer>

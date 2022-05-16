@@ -25,6 +25,7 @@ const Home: React.FC = () => {
       <FirstSection
         title='Head out on your next travel'
         hasButton
+        srcImage='https://raw.githubusercontent.com/paulobr4z/Travel-and-Tours/master/src/assets/img/home.jpg'
       />
 
       <ServicesContainer>

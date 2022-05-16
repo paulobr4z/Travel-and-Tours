@@ -3,14 +3,19 @@ import { HeaderContainer, HeaderWrapper } from './styles'
 interface IFirstSection {
   title: string;
   hasButton?: boolean;
+  srcImage: string;
 }
 
 export function FirstSection({
   title = 'Title',
   hasButton = false,
+  srcImage = ''
 }: IFirstSection) {
   return (
     <HeaderContainer >
+      <div className="backgroundHeader">
+        <img src={srcImage} alt="background" />
+      </div>
       <HeaderWrapper>
         <h1>{title}</h1>
         <h2>

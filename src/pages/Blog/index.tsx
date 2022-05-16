@@ -23,6 +23,7 @@ const Blog: React.FC = () => {
     <>
       <FirstSection
         title='Blog'
+        srcImage='https://raw.githubusercontent.com/paulobr4z/Travel-and-Tours/master/src/assets/img/blog.jpg'
       />
       <BlogContainer>
         <BlogTitle>
