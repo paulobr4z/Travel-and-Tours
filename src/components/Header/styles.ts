@@ -14,8 +14,8 @@ export const Header = styled.div<MenuProps>`
   width: 100%;
   background: #ffffff;
   transition: all 1s;
-  z-index: 999;
   box-shadow: ${({ click, scroll }) => scroll > 1 && !click ? '0px 2px 4px rgba(48, 46, 69, 0.06)' : 'none'};
+  z-index: 999;
 
   span {
     display: flex;
@@ -27,6 +27,11 @@ export const Header = styled.div<MenuProps>`
 
     @media (max-width: 1024px) {
       margin: 0 16px;
+    }
+
+    a {
+      color: #000000;
+      text-decoration: none;
     }
   }
 

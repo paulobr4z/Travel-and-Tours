@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import background from '../../assets/img/home.jpg';
-
 export const HeaderContainer = styled.div`
   height: 760px;
   display: flex;

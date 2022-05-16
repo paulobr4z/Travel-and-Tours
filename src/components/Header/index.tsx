@@ -36,13 +36,14 @@ function Menu () {
 
       <Header click={click}  scroll={scroll}>
         <span>
-          <div className="logo">
+          <Link to="/" >
+            <div className="logo">
 
-            <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" />
 
-            <h1>Travel &amp; <br /> Tours</h1>
-          </div>
-          
+              <h1>Travel &amp; <br /> Tours</h1>
+            </div>
+          </Link>          
           
           <Checkbox click={click} onClick={() => setClick(!click)}  scroll={scroll}>
             <div></div>
