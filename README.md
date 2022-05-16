@@ -27,10 +27,10 @@ git clone https://github.com/paulobr4z/Travel-and-Tours.git
 cd Travel-and-Tours
 
 # Instale as dependências
-yarn install
+yarn
 
 # Rode o aplicação
-yarn dev
+yarn start
 
 # Acesse http://localhost:3000 no seu navagador.
 ```
